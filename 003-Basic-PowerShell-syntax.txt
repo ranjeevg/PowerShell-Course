@@ -1,0 +1,13 @@
+FYI: Commandlet, or 'cmdlet', is how Microsoft refers to PowerShell commands
+
+--------------------------------------------------------------------------------------------------------
+
+A brief interlude for the 'grammatical syntax' of PowerShell commands:
+    - tend to be of the 'verb-noun' pattern
+    - e.g, the 'Get-service' gets all services enabled on the system
+
+- Don't forget about the humble asterisk as a wildcard for searching for results.
+    - E.g. id I wanted to find all Get command cmdlets which end with the 'service' word, I could list them as below:
+        - Get-Command *.service
+    - another example for listing commands that begin with the 'Resume' verb:
+        - Get-Command Resume*

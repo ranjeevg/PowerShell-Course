@@ -1,0 +1,3 @@
+PowerShell ISE: Integrating Scripting Environment
+
+... apparebntly, Windows 11's terminal supports multi-session, multi-tab scripting too? Good to know.
