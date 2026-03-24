@@ -1,0 +1,19 @@
+- the Get-Service cmdlet is very common
+    - another one: the get-process cmdlet
+
+- the Select-Object cmdlet is another helpful one: basically selecting the fields of the object to project
+
+template:
+    Get-Service <service name> | Select-Object <[string array of properties to ve exposed, in that order]
+    - the '|' is the same as the pipe command on Bash
+
+    An example:
+
+    Given the service VSS, if we only want the service display name and status:
+
+        Get-Service VCC | Select-Object DisplayName, Status
+
+    (we can obviously play around with the properties projected, based on the response model)
+
+        - to view the entire schema, we can usee our old friend the asterisk again:
+            <cmdlet> | Select-Object *
